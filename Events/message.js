@@ -1,4 +1,4 @@
-const { Command, cmdsAll } = require("../util/Command");
+const { Command, cmdsAll } = require("../util/command");
 
 module.exports = async (client, message) => {
   try {
@@ -12,7 +12,7 @@ module.exports = async (client, message) => {
       .trim()
       .split(/ +/g);
     const command = args.shift().toLowerCase();
-    console.log(command, args);
+    console.log("New command ran ",command, args);
     if (cmdsAll.indexOf(command) == -1) {
       message.channel.send("invalid command");
     }

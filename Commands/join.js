@@ -107,7 +107,6 @@ Joined Clan : ${clan}`);
       return;
     })
     .catch((res) => {
-      console.log(res);
         message.author.send(`Timeout,
 Joining process failed, you didnot responded within 30 seconds`)
     });
